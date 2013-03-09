@@ -1471,7 +1471,7 @@ sub output_tag_info{
 	my $authz = $r->authz;
 	my $user = $r->param('user');
 	if ($authz->hasPermissions($user, "modify_tags")) {
-		print CGI::p(CGI::div("Tags go here"));
+		print CGI::p(CGI::div({id=>'tagwidget'}, "Modify Tags"));
 	}
 	return "";
 }
