@@ -260,6 +260,7 @@ sub pre_header_initialize {
 	$input = {%$std_input, %$input};
 	# Fix the environment display mode
 	$input->{envir}->{displayMode} = $input->{displayMode} if($input->{displayMode});
+	$input->{envir}->{effectivePermissionLevel} = 100;
 	
 	##########################################
 	# FIXME hack to get fileName or filePath   param("set") contains the path
@@ -406,7 +407,8 @@ sub environment {
 		numZeroLevelDefault =>0.000001,
 		numZeroLevelTolDefault =>0.000001,
 		openDate=> '3014438528',
-		PRINT_FILE_NAMES_FOR => [ 'gage'],
+		PRINT_FILE_NAMES_FOR => [ ],
+		effectivePermissionLevel => 10,
 		probFileName => 'probFileName should not be used --use fileName instead',
 		problemSeed  => 1234,
 		problemValue =>1,
