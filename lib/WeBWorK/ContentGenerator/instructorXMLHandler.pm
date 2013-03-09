@@ -396,7 +396,7 @@ sub environment {
 		sectionNumber => 1,
 		sessionKey=> 'Not defined',
 		setNumber =>'MAAtutorial',
-		studentLogin =>'gage',
+		studentLogin =>'there is no such student',
 		studentName => 'Mike Gage',
 		tempDirectory => '/ww/htdocs/tmp/gage_course/',
 		templateDirectory=>'/ww/webwork/courses/gage_course/templates/',
